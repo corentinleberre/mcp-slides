@@ -173,7 +173,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 
 const server = new McpServer({
-  name: "v7-mcp-demo",
+  name: "mcp-demo",
   version: "1.0.0",
 });
 
@@ -206,7 +206,7 @@ await server.connect(new StdioServerTransport());
 
 ```json
 {
-  "v7-mcp-demo": {
+  "mcp-demo": {
     "command": "npx",
     "args": ["."],
     "cwd": "/path/to/your/mcp/project"
@@ -225,7 +225,7 @@ await server.connect(new StdioServerTransport());
 **💡Pro Tip: Don't forget to add a rule!**
 
 ```md
-When you need to sum two numbers use the mcp v7-mcp-demo
+When you need to sum two numbers use the mcp mcp-demo
 ```
 
 </div>
